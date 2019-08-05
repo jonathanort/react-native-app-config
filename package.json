@@ -1,6 +1,6 @@
 {
   "name": "react-native-app-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native App Config",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   ],
   "author": "Jonathan Ortheden",
   "license": "MIT",
+  "homepage": "https://github.com/jonathanort/react-native-app-config",
   "repository": {
     "type": "git",
     "url": "https://github.com/jonathanort/react-native-app-config.git"
