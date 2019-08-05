@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/jonathanort/react-native-app-config.git", :tag => "master" }
-  s.source_files  = "RNAppConfig/**/*.{h,m}"
+  s.source_files  = "ios/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React"
