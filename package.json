@@ -18,8 +18,5 @@
   },
   "peerDependencies": {
     "react-native": "^0.60.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
