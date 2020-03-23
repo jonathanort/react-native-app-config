@@ -32,7 +32,7 @@
 - (NSNumber *) useStaging
 {
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  return [NSNumber numberWithBool:[defaults valueForKey:@"staging_enabled"] ?: NO];
+  return [defaults valueForKey:@"staging_enabled"] ?: [NSNumber numberWithInt:0];
 }
   
 - (NSDictionary *)constantsToExport
