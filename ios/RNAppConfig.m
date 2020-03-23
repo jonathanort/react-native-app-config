@@ -28,6 +28,12 @@
   {
     return [[NSUserDefaults standardUserDefaults] valueForKey:@"pushToken"] ?: [NSNull null];
   }
+
+- (NSNumber *) useStaging
+{
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  return [NSNumber numberWithBool:[defaults valueForKey:@"staging_enabled"] ?: NO];
+}
   
 - (NSDictionary *)constantsToExport
   {
@@ -35,7 +41,8 @@
              @"uniqueId": self.uniqueId,
              @"buildType": self.buildType,
              @"appVersion": self.appVersion,
-             @"pushToken": self.pushToken
+             @"pushToken": self.pushToken,
+             @"useStaging": self.useStaging
              };
   }
   
